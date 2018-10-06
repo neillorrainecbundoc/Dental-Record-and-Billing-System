@@ -7,47 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bunifu.Framework.UI;
 using MySql.Data.MySqlClient;
+using Bunifu.Framework.UI;
 
 namespace Dental_Record_and_Billing_System
 {
-    public partial class UpdateAcc : Form
+    public partial class ChangePassFP : Form
     {
-        private DataGridViewRow row;
-        private Dashboard dboard;
         private String AccountId;
 
-        public UpdateAcc()
+        public ChangePassFP()
         {
             InitializeComponent();
         }
-
-        public UpdateAcc(DataGridViewRow e, Dashboard db)
+        public ChangePassFP(String id)
         {
             InitializeComponent();
-            row = e;
-            dboard = db;
-
-            AccountId = row.Cells["Account Id"].Value.ToString().Replace("ACCID", "");
-            bunifuMaterialTextbox1.Text = row.Cells["Username"].Value.ToString();
             
             bunifuMaterialTextbox2.ForeColor = Color.White;
-            bunifuMaterialTextbox3.ForeColor = Color.White;
-
-            bunifuMaterialTextbox1.Enabled = false;
+            bunifuMaterialTextbox1.ForeColor = Color.White;
+            bunifuMaterialTextbox2.isPassword = true;
+            bunifuMaterialTextbox1.isPassword = true;
+            AccountId = id;
         }
 
         private void upbtn_Click(object sender, EventArgs e)
         {
-            if (bunifuMaterialTextbox2.Text == bunifuMaterialTextbox3.Text)
+            if (bunifuMaterialTextbox2.Text == bunifuMaterialTextbox1.Text)
                 if (!string.IsNullOrEmpty(bunifuMaterialTextbox2.Text))
                 {
-                    String query = "UPDATE users SET password = '" + bunifuMaterialTextbox2.Text + "'where id = " + AccountId + ";";
+                    String query = "UPDATE users SET password = '" + bunifuMaterialTextbox2.Text + "'where id = '" + AccountId + "';";
                     MySqlCommand cmd1 = new MySqlCommand(query, Main.dbconnection);
                     cmd1.ExecuteScalar();
-                    dboard.SignupInitTable();
-                    MessageBox.Show("Account updated!");
+                    MessageBox.Show(query);
+                    MessageBox.Show("Password has been changed");
                     this.Hide();
                 }
 
@@ -57,7 +50,7 @@ namespace Dental_Record_and_Billing_System
 
                     if (string.IsNullOrEmpty(bunifuMaterialTextbox2.Text))
                     {
-                        errFields += "|password|";
+                        errFields += "password";
                     }
 
                     MessageBox.Show("ERROR: \n\n Fix information for " + errFields);
@@ -73,14 +66,24 @@ namespace Dental_Record_and_Billing_System
             this.Close();
         }
 
+        private void bunifuMaterialTextbox3_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
         {
             bunifuMaterialTextbox2.isPassword = true;
         }
 
-        private void bunifuMaterialTextbox3_OnValueChanged(object sender, EventArgs e)
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
         {
-            bunifuMaterialTextbox3.isPassword = true;
+            bunifuMaterialTextbox1.isPassword = true;
         }
     }
 }

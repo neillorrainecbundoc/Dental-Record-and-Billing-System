@@ -264,6 +264,7 @@ namespace Dental_Record_and_Billing_System
 
         private void pssTextBox_OnValueChanged(object sender, EventArgs e)
         {
+            passwordTextBox.isPassword = true;
             passwordTextBox = (BunifuMaterialTextbox)sender;
             passwordTextBox.ForeColor = Color.White;
             pword = passwordTextBox.Text;

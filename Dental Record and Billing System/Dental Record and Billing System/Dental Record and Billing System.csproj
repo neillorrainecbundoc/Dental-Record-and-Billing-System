@@ -90,6 +90,12 @@
       <DependentUpon>AddTransaction.cs</DependentUpon>
     </Compile>
     <Compile Include="BunifuTextBox.cs" />
+    <Compile Include="ChangePassFP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassFP.Designer.cs">
+      <DependentUpon>ChangePassFP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddTransaction.resx">
       <DependentUpon>AddTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassFP.resx">
+      <DependentUpon>ChangePassFP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

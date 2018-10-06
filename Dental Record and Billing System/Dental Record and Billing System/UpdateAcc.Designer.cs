@@ -126,9 +126,9 @@
             this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.White;
             this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
+            this.bunifuMaterialTextbox2.isPassword = true;
             this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(97)))), ((int)(((byte)(184)))));
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.DarkGray;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(97)))), ((int)(((byte)(184)))));
@@ -198,9 +198,9 @@
             this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.White;
             this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
+            this.bunifuMaterialTextbox3.isPassword = true;
             this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(97)))), ((int)(((byte)(184)))));
             this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.DarkGray;
             this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(97)))), ((int)(((byte)(184)))));
@@ -211,6 +211,7 @@
             this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(202, 33);
             this.bunifuMaterialTextbox3.TabIndex = 50;
             this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox3.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox3_OnValueChanged);
             // 
             // UpdateAcc
             // 
