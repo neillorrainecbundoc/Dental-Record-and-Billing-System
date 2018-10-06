@@ -92,7 +92,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.username_dashboard_label = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
@@ -1029,7 +1029,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(97)))), ((int)(((byte)(184)))));
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.label19);
+            this.panel3.Controls.Add(this.username_dashboard_label);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.Time);
             this.panel3.Controls.Add(this.Date);
@@ -1050,17 +1050,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label19
+            // username_dashboard_label
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(894, 5);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(88, 21);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Username";
+            this.username_dashboard_label.AutoSize = true;
+            this.username_dashboard_label.BackColor = System.Drawing.Color.Transparent;
+            this.username_dashboard_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_dashboard_label.ForeColor = System.Drawing.Color.White;
+            this.username_dashboard_label.Location = new System.Drawing.Point(894, 5);
+            this.username_dashboard_label.Name = "username_dashboard_label";
+            this.username_dashboard_label.Size = new System.Drawing.Size(88, 21);
+            this.username_dashboard_label.TabIndex = 7;
+            this.username_dashboard_label.Text = "Username";
             // 
             // label7
             // 
@@ -1827,7 +1827,7 @@
         private System.Windows.Forms.Label label10;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.Label label19;
+        public System.Windows.Forms.Label username_dashboard_label;
         private System.Windows.Forms.Label label20;
         private Bunifu.Framework.UI.BunifuImageButton savepymntBtn;
         private System.Windows.Forms.Label label21;
