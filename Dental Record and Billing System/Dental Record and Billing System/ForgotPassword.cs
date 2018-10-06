@@ -55,17 +55,18 @@ namespace Dental_Record_and_Billing_System
         {
             if(!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(answer)) 
             {
-                String query = "select count(*) from users where " +
+                String query = "select id from users where " +
                     "username = '"+username+"' and " +
-                    "question = '"+question+"' and " +
+                    "question = '"+secret_question_dropdown.selectedValue+"' and " +
                     "answer = '"+answer+"'";
 
                 MySqlCommand cmd = new MySqlCommand(query, Main.dbconnection);
-                Object count = cmd.ExecuteScalar();
+                Object id = cmd.ExecuteScalar();
 
-                if (Convert.ToInt32(count) == 1)
+                if (id != null && !string.IsNullOrEmpty(id.ToString()))
                 {
-                    // CHANGE PASSWORD HERE
+                    ChangePassFP cp = new ChangePassFP(id.ToString());
+                    cp.Show();
                     this.Hide();
                 } else
                 {
@@ -93,7 +94,6 @@ namespace Dental_Record_and_Billing_System
             answer = "";
 
             secret_question_dropdown.selectedIndex = 0;
-            question = secret_question_dropdown.selectedValue;
         }
 
         /**
@@ -210,14 +210,5 @@ namespace Dental_Record_and_Billing_System
             }
         }
 
-        /**
-         * Secret Question Dropdown
-         * 
-         * Stores value of question selected
-         */ 
-        private void secret_question_dropdown_on_item_selected(object sender, EventArgs e)
-        {
-            question = secret_question_dropdown.selectedValue;
-        }
     }
 }

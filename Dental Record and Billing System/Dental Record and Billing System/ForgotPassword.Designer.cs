@@ -78,6 +78,7 @@
             // username_textbox
             // 
             this.username_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.username_textbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("username_textbox.BackgroundImage")));
             this.username_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.username_textbox.ForeColor = System.Drawing.Color.White;
             this.username_textbox.Icon = ((System.Drawing.Image)(resources.GetObject("username_textbox.Icon")));
@@ -116,6 +117,7 @@
             // answer_textbox
             // 
             this.answer_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.answer_textbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("answer_textbox.BackgroundImage")));
             this.answer_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.answer_textbox.ForeColor = System.Drawing.Color.White;
             this.answer_textbox.Icon = ((System.Drawing.Image)(resources.GetObject("answer_textbox.Icon")));
@@ -136,7 +138,7 @@
             this.proceed_button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(94)))), ((int)(((byte)(189)))));
             this.proceed_button.ActiveForecolor = System.Drawing.Color.White;
             this.proceed_button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(94)))), ((int)(((byte)(189)))));
-            this.proceed_button.BackColor = System.Drawing.Color.Gray;
+            this.proceed_button.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.proceed_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("proceed_button.BackgroundImage")));
             this.proceed_button.ButtonText = "Proceed";
             this.proceed_button.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -144,7 +146,7 @@
             this.proceed_button.ForeColor = System.Drawing.Color.White;
             this.proceed_button.IdleBorderThickness = 1;
             this.proceed_button.IdleCornerRadius = 20;
-            this.proceed_button.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.proceed_button.IdleFillColor = System.Drawing.SystemColors.ControlDarkDark;
             this.proceed_button.IdleForecolor = System.Drawing.Color.White;
             this.proceed_button.IdleLineColor = System.Drawing.Color.White;
             this.proceed_button.Location = new System.Drawing.Point(123, 278);
@@ -178,7 +180,7 @@
             this.username_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.username_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username_label.ForeColor = System.Drawing.Color.White;
-            this.username_label.Location = new System.Drawing.Point(100, 90);
+            this.username_label.Location = new System.Drawing.Point(100, 89);
             this.username_label.Name = "username_label";
             this.username_label.Size = new System.Drawing.Size(77, 20);
             this.username_label.TabIndex = 48;
@@ -189,7 +191,7 @@
             this.answer_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.answer_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer_label.ForeColor = System.Drawing.Color.White;
-            this.answer_label.Location = new System.Drawing.Point(100, 238);
+            this.answer_label.Location = new System.Drawing.Point(100, 237);
             this.answer_label.Name = "answer_label";
             this.answer_label.Size = new System.Drawing.Size(77, 20);
             this.answer_label.TabIndex = 49;
@@ -199,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(366, 342);
             this.Controls.Add(this.answer_label);
             this.Controls.Add(this.username_label);

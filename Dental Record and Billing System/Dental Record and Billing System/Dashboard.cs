@@ -105,11 +105,11 @@ namespace Dental_Record_and_Billing_System
             String query;
             if (string.IsNullOrEmpty(searchServices) || string.IsNullOrWhiteSpace(searchServices))
             {
-                query = "SELECT  sub_services.name, sub_services.amount from sub_services join services on sub_services.svc_id = services.id where services.name = '" + category + "'";
+                query = "SELECT  sub_services.name as 'Service', sub_services.amount as 'Price' from sub_services join services on sub_services.svc_id = services.id where services.name = '" + category + "'";
             }
             else
             {
-                query = "SELECT  sub_services.name, sub_services.amount from sub_services join services on sub_services.svc_id = services.id where services.name = '" + category + "' and (sub_services.name like '%" + searchServices + "%' or sub_services.amount  like '%" + searchServices + "%')";
+                query = "SELECT  sub_services.name as 'Service' , sub_services.amount as 'Price' from sub_services join services on sub_services.svc_id = services.id where services.name = '" + category + "' and (sub_services.name like '%" + searchServices + "%' or sub_services.amount  like '%" + searchServices + "%')";
             }
 
             MyDA.SelectCommand = new MySqlCommand(query, Main.dbconnection);
@@ -553,7 +553,11 @@ namespace Dental_Record_and_Billing_System
             toolTip1.SetToolTip(bunifuImageButton10, "Proceed to Payment");
         }
 
-        //Appointment iteeeeey!!
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+            toolTip1.SetToolTip(bunifuImageButton12, "Change Password");
+        }
+        //Appointment
         private void bunifuImageButton4_Click_1(object sender, EventArgs e)
         {
             PatientAppointment PA = new PatientAppointment(this);
@@ -1252,6 +1256,7 @@ namespace Dental_Record_and_Billing_System
             MySqlCommand cmd2 = new MySqlCommand(queryAll, Main.dbconnection);
             cmd2.ExecuteNonQuery();
             AppointmentInitTable();
+            THinitTable();
 
         }
 
@@ -1330,7 +1335,7 @@ namespace Dental_Record_and_Billing_System
         {
 
             MySqlDataAdapter MyDA = new MySqlDataAdapter();
-            String query = "SELECT concat(firstname, ' ', middlename, ' ', lastname) as 'Name', address as 'Address', contact as 'Contact #', gender as 'Gender', position as 'Position' from users";
+            String query = "SELECT concat('ACCID', lpad(id, 4, '0')) as 'Account ID', concat(firstname, ' ', middlename, ' ', lastname) as 'Name', address as 'Address', contact as 'Contact #', gender as 'Gender', position as 'Position', username as 'Username' from users";
             MyDA.SelectCommand = new MySqlCommand(query, Main.dbconnection);
 
             DataTable table = new DataTable();
@@ -1348,6 +1353,7 @@ namespace Dental_Record_and_Billing_System
             dataGridView2.Columns["Address"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataGridView2.Columns["Contact #"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataGridView2.Columns["Position"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView2.Columns["Username"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataGridView2.DefaultCellStyle.SelectionBackColor = Color.LightGray;
             dataGridView2.DefaultCellStyle.SelectionForeColor = Color.Black;
             dataGridView2.ReadOnly = true;
@@ -1362,18 +1368,58 @@ namespace Dental_Record_and_Billing_System
 
             if (dataGridView2.Rows.Count > 0)
             {
-                label22.Hide();
-                MessageBox.Show("!!!!!!!!!!");
+                label24.Hide();
             }
             else
             {
-                label22.Show();
+                label24.Show();
             }
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //change password
+        private void bunifuImageButton12_Click(object sender, EventArgs e)
         {
+            var selectedRows = dataGridView2.SelectedRows.OfType<DataGridViewRow>()
+                   .Where(row => !row.IsNewRow)
+                   .ToArray();
 
+            int count = selectedRows.Length;
+            if (count == 1)
+            {
+                foreach (var row in selectedRows)
+                {
+                   UpdateAcc ua = new UpdateAcc(row, this);
+                   ua.Show();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Select only 1 account to update.");
+            }
+        }
+
+        private void bunifuImageButton11_Click(object sender, EventArgs e)
+        {
+            var selectedRows = servicesGridView.SelectedRows.OfType<DataGridViewRow>()
+                   .Where(row => !row.IsNewRow)
+                   .ToArray();
+
+            int count = selectedRows.Length;
+            if (count == 1)
+            {
+                foreach (var row in selectedRows)
+                {
+                    UpdateServicesPrice usp = new UpdateServicesPrice(row, this);
+                    usp.Show();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Select only 1 account to update.");
+            }
+            ;
         }
     }
 }

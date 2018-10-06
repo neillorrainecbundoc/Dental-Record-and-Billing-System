@@ -14,12 +14,12 @@ CREATE TABLE IF NOT EXISTS users (
   position varchar(20) not null,
   username varchar(20) not null,
   password varchar(20) not null,
-  secretques varchar(60) not null,
+  question varchar(60) not null,
   answer varchar(60),
   primary key(id)
 );
 
-INSERT INTO users(firstname, middlename, lastname, address, contact, gender, position, username, password, secretques, answer)
+INSERT INTO users(firstname, middlename, lastname, address, contact, gender, position, username, password, question, answer)
 VALUES('abc', 'def', 'hij', 'Cavinti, Laguna', '09213708901','Female','Dentist','admin', 'admin123','What is your favorite movie', 'SDTG');
 
 
