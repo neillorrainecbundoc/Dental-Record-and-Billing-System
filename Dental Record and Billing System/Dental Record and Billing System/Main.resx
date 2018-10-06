@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="userTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="username_textbox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAB/CAYAAABYHaUHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUoSURBVHhe7dhLbltZEERB7X+V2kk3ZFfBNJ3iB6LEx0QE
@@ -146,7 +146,7 @@
         +uOSJEmSfqaZ5c+R/kGSJEmSHtvM7y94e/sfzJfG4RQFrDIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="userTextBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="username_textbox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEwSURBVFhH7Y5BDoQwDAP5/yv5ya5ADgpdt3FCYS+M5ANk
@@ -157,7 +157,7 @@
         7b0opwV03E7qZkqeROqml/8RPKMPW3o6eMrLDSzLFwFlPUK8N0NIAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pwTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="password_textbox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAB/CAYAAABYHaUHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUoSURBVHhe7dhLbltZEERB7X+V2kk3ZFfBNJ3iB6LEx0QE
@@ -185,7 +185,7 @@
         +uOSJEmSfqaZ5c+R/kGSJEmSHtvM7y94e/sfzJfG4RQFrDIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pwTextBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="password_textbox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADVSURBVFhH7Y5RCgQxCEN7/1P2JrsIVoZiqNRMB4oP/DBq
@@ -195,7 +195,7 @@
         03hZElN/L5sAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="loginBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="login_button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAAoCAYAAAA16j4lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAExSURBVHhe7dshDoNAFIThHg2FQqFQKBQKxQE4AAqFR6E4
@@ -206,7 +206,7 @@
         09TWdXX/21rYw2criIuu38DCSYHJKTA5BSanwNQiewNyOjoitet8bAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="DentistLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="dentist_clinic_logo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIQAAADPCAYAAAA023kIAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAAAd0SU1FB+IBHAQZN5RDdXUAAAxlSURBVHhe7ZZtjuw6DkPvCmZNb/uzqjdXQAdg
