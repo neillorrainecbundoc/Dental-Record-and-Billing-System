@@ -12,7 +12,7 @@ namespace Dental_Record_and_Billing_System
         private String databaseName = "dentistdb";
         private String server = "localhost";
         private String databaseUid = "root";
-        // Variable Storage
+        // Variable
         private String username;
         private String password;
 
@@ -138,9 +138,9 @@ namespace Dental_Record_and_Billing_System
         private void username_textbox_on_text_change(object sender, EventArgs e)
         {
             username_label.Hide();
-            username_textbox.text.Replace(Environment.NewLine, "");
+            username_textbox.text = username_textbox.text.Replace(Environment.NewLine, "");
             username = username_textbox.text;
-            if (username == "")
+            if (string.IsNullOrEmpty(username))
             {
                 username_label.Show();
             }
@@ -166,7 +166,7 @@ namespace Dental_Record_and_Billing_System
         /**
          * Username Text Box
          * 
-         * Hides username label when user entered password text box.
+         * Hides username label when user entered username text box.
          */
         private void username_textbox_enter(object sender, EventArgs e)
         {
@@ -176,11 +176,11 @@ namespace Dental_Record_and_Billing_System
         /**
          * Username Text Box
          * 
-         * Shows username label when user leaves password text box and has no input on it.
+         * Shows username label when user leaves username text box and has no input on it.
          */
         private void username_textbox_leave(object sender, EventArgs e)
         {
-            if (username_textbox.text.Length <= 0)
+            if (string.IsNullOrEmpty(username_textbox.text))
             {
                 username_label.Show();
             }
@@ -195,9 +195,9 @@ namespace Dental_Record_and_Billing_System
         private void password_textbox_on_text_change(object sender, EventArgs e)
         {
             password_label.Hide();
-            password_textbox.text.Replace(Environment.NewLine, "");
+            password_textbox.text = password_textbox.text.Replace(Environment.NewLine, "");
             password = password_textbox.text;
-            if (password == "")
+            if (string.IsNullOrEmpty(password))
             {
                 password_label.Show();
             }
@@ -237,7 +237,7 @@ namespace Dental_Record_and_Billing_System
          */ 
         private void password_textbox_leave(object sender, EventArgs e)
         {
-            if (password_textbox.text.Length <= 0)
+            if (string.IsNullOrEmpty(password_textbox.text))
             {
                 password_label.Show();
             }
