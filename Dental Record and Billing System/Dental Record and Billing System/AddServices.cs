@@ -75,13 +75,6 @@ namespace Dental_Record_and_Billing_System
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
-        private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
-        {
-            //categoryTextBox = (BunifuMaterialTextbox)sender;
-            //categoryTextBox.ForeColor = Color.White;
-            //category = categoryTextBox.Text;
-        }
-
         private void addpatientsbtn_Click(object sender, EventArgs e)
         {
              if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(amount) && !string.IsNullOrEmpty(category))

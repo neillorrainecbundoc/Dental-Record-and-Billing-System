@@ -152,6 +152,18 @@
     <Compile Include="Update.Designer.cs">
       <DependentUpon>Update.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAcc.Designer.cs">
+      <DependentUpon>UpdateAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateServicesPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateServicesPrice.Designer.cs">
+      <DependentUpon>UpdateServicesPrice.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCategory.resx">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +211,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Update.resx">
       <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAcc.resx">
+      <DependentUpon>UpdateAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateServicesPrice.resx">
+      <DependentUpon>UpdateServicesPrice.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

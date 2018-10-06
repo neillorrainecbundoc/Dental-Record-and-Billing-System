@@ -307,9 +307,9 @@
             this.pssTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.pssTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.pssTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pssTextBox.HintForeColor = System.Drawing.Color.Empty;
+            this.pssTextBox.HintForeColor = System.Drawing.Color.White;
             this.pssTextBox.HintText = "";
-            this.pssTextBox.isPassword = false;
+            this.pssTextBox.isPassword = true;
             this.pssTextBox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(97)))), ((int)(((byte)(184)))));
             this.pssTextBox.LineIdleColor = System.Drawing.Color.DarkGray;
             this.pssTextBox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(97)))), ((int)(((byte)(184)))));

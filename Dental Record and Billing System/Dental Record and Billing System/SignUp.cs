@@ -92,9 +92,7 @@ namespace Dental_Record_and_Billing_System
                 try
                 {
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("before");
                     dashboard.SignupInitTable();
-                    MessageBox.Show("after");
 
                     firstNameTextBox.Text = "";
                     middleNameTextBox.Text = "";

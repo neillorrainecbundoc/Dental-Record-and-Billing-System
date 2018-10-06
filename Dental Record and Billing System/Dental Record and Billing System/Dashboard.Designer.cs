@@ -52,6 +52,7 @@
             this.Date = new System.Windows.Forms.Label();
             this.Time = new System.Windows.Forms.Label();
             this.servicesPanel = new System.Windows.Forms.Panel();
+            this.bunifuImageButton11 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuImageButton9 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton8 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -125,6 +126,8 @@
             this.balanceDataGrid = new System.Windows.Forms.DataGridView();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton214 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -132,6 +135,9 @@
             this.label23 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.bunifuImageButton12 = new Bunifu.Framework.UI.BunifuImageButton();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dashboardMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardLogo)).BeginInit();
@@ -142,6 +148,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.addPatientBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientGridView)).BeginInit();
             this.servicesPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
@@ -169,6 +176,7 @@
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -527,7 +535,7 @@
             this.Date.BackColor = System.Drawing.Color.Transparent;
             this.Date.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Date.ForeColor = System.Drawing.Color.White;
-            this.Date.Location = new System.Drawing.Point(510, 5);
+            this.Date.Location = new System.Drawing.Point(557, 5);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(50, 21);
             this.Date.TabIndex = 3;
@@ -547,6 +555,7 @@
             // 
             // servicesPanel
             // 
+            this.servicesPanel.Controls.Add(this.bunifuImageButton11);
             this.servicesPanel.Controls.Add(this.bunifuDropdown1);
             this.servicesPanel.Controls.Add(this.bunifuImageButton9);
             this.servicesPanel.Controls.Add(this.bunifuImageButton8);
@@ -562,6 +571,20 @@
             this.servicesPanel.Size = new System.Drawing.Size(1028, 658);
             this.servicesPanel.TabIndex = 2;
             this.servicesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.servicesPanel_Paint);
+            // 
+            // bunifuImageButton11
+            // 
+            this.bunifuImageButton11.BackColor = System.Drawing.Color.DimGray;
+            this.bunifuImageButton11.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton11.Image")));
+            this.bunifuImageButton11.ImageActive = null;
+            this.bunifuImageButton11.Location = new System.Drawing.Point(508, 52);
+            this.bunifuImageButton11.Name = "bunifuImageButton11";
+            this.bunifuImageButton11.Size = new System.Drawing.Size(36, 35);
+            this.bunifuImageButton11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton11.TabIndex = 29;
+            this.bunifuImageButton11.TabStop = false;
+            this.bunifuImageButton11.Zoom = 10;
+            this.bunifuImageButton11.Click += new System.EventHandler(this.bunifuImageButton11_Click);
             // 
             // bunifuDropdown1
             // 
@@ -1551,12 +1574,30 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Gray;
+            this.panel9.Controls.Add(this.panel13);
+            this.panel9.Controls.Add(this.panel12);
             this.panel9.Controls.Add(this.bunifuThinButton21);
             this.panel9.Controls.Add(this.bunifuThinButton214);
-            this.panel9.Location = new System.Drawing.Point(1101, 28);
+            this.panel9.Location = new System.Drawing.Point(1089, 28);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(169, 91);
+            this.panel9.Size = new System.Drawing.Size(181, 91);
             this.panel9.TabIndex = 8;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.LightGray;
+            this.panel13.Location = new System.Drawing.Point(172, -1);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(10, 91);
+            this.panel13.TabIndex = 39;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.LightGray;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(10, 91);
+            this.panel12.TabIndex = 38;
             // 
             // bunifuThinButton21
             // 
@@ -1576,7 +1617,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.DimGray;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(14, 9);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(19, 13);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(145, 36);
@@ -1602,7 +1643,7 @@
             this.bunifuThinButton214.IdleFillColor = System.Drawing.Color.DimGray;
             this.bunifuThinButton214.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton214.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuThinButton214.Location = new System.Drawing.Point(14, 46);
+            this.bunifuThinButton214.Location = new System.Drawing.Point(19, 45);
             this.bunifuThinButton214.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton214.Name = "bunifuThinButton214";
             this.bunifuThinButton214.Size = new System.Drawing.Size(145, 37);
@@ -1653,20 +1694,61 @@
             // 
             // panel11
             // 
+            this.panel11.Controls.Add(this.label25);
+            this.panel11.Controls.Add(this.label24);
+            this.panel11.Controls.Add(this.bunifuImageButton12);
             this.panel11.Controls.Add(this.dataGridView2);
             this.panel11.Location = new System.Drawing.Point(244, 28);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1026, 658);
             this.panel11.TabIndex = 10;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(23, 14);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(126, 30);
+            this.label25.TabIndex = 31;
+            this.label25.Text = "Accounts";
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.Font = new System.Drawing.Font("Rockwell", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label24.Location = new System.Drawing.Point(72, 282);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(883, 95);
+            this.label24.TabIndex = 30;
+            this.label24.Text = "NO RECORD FOUND";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuImageButton12
+            // 
+            this.bunifuImageButton12.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton12.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton12.Image")));
+            this.bunifuImageButton12.ImageActive = null;
+            this.bunifuImageButton12.Location = new System.Drawing.Point(953, 9);
+            this.bunifuImageButton12.Name = "bunifuImageButton12";
+            this.bunifuImageButton12.Size = new System.Drawing.Size(48, 50);
+            this.bunifuImageButton12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton12.TabIndex = 29;
+            this.bunifuImageButton12.TabStop = false;
+            this.bunifuImageButton12.Zoom = 10;
+            this.bunifuImageButton12.Click += new System.EventHandler(this.bunifuImageButton12_Click);
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(23, 83);
+            this.dataGridView2.Location = new System.Drawing.Point(23, 66);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(978, 545);
+            this.dataGridView2.Size = new System.Drawing.Size(978, 562);
             this.dataGridView2.TabIndex = 28;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // Dashboard
             // 
@@ -1674,16 +1756,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(1270, 685);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dashboardMenuPanel);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.servicesPanel);
+            this.Controls.Add(this.patientPanel);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.paymentPanel);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.servicesPanel);
-            this.Controls.Add(this.patientPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Dashboard";
@@ -1698,6 +1780,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.patientGridView)).EndInit();
             this.servicesPanel.ResumeLayout(false);
             this.servicesPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
@@ -1732,6 +1815,8 @@
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
@@ -1842,5 +1927,11 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton215;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton12;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel12;
+        public System.Windows.Forms.Label label25;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton11;
     }
 }
